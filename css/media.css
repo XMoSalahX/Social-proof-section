@@ -1,0 +1,116 @@
+@media (max-width: 1440px) {
+  .container {
+    height: auto;
+    margin-block: 50px;
+  }
+  .container .main-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: 1/1/1/13;
+  }
+  .container .rate {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: 2/1/2/13;
+  }
+  .container .box-ver-1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: 3/1/3/5;
+  }
+  .container .box-ver-2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-area: 3/5/3/9;
+  }
+  .container .box-ver-3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 4;
+    grid-area: 3/9/3/13;
+  }
+}
+
+@media (max-width: 1140px) {
+  .container {
+    grid-row-gap: unset;
+  }
+  .container .main-title h1,
+  .container .main-title .main-p {
+    margin: auto;
+    text-align: center;
+  }
+  .container .main-title .main-p {
+    margin-block: 50px;
+  }
+  .container .box-ver-1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: 3/1/3/13;
+  }
+  .container .box-ver-2 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: 4/1/4/13;
+  }
+  .container .box-ver-3 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-area: 5/1/5/13;
+  }
+  .container .rate .box {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .container .main-title .main-p {
+    width: auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .container .main-title h1 {
+    width: auto;
+  }
+  .container {
+    display: block;
+  }
+  .container .rate .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .star-box {
+    margin-top: 10px;
+  }
+  .container .rate .box p {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 355px) {
+  .container .box-verified div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .box-verified div img {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .container .ver-Content {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=media.css.map */

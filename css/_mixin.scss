@@ -1,0 +1,9 @@
+@mixin pseudo-elements($positionX, $valX, $positionY, $valY) {
+    content: "";
+    position: absolute;
+    #{$positionY}: $valY;
+    #{$positionX}: $valX;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
