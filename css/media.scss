@@ -1,3 +1,4 @@
+@import "mixin";
 @media (max-width:1440px) {
     .container {
         height: auto;
@@ -71,6 +72,20 @@
     }
     .container .rate .box p {
         margin-top: 0;
+    }
+    main {
+        &::before {
+            @include pseudo-elements("left", 0, "top", 0);
+            background-image: url('../images/bg-pattern-top-mobile.svg');
+            bottom: 0;
+        }
+        &::after {
+            @include pseudo-elements("right",
+            0,
+            "bottom",
+            0);
+            background-image: url('../images/bg-pattern-bottom-mobile.svg');
+        }
     }
 }
 
